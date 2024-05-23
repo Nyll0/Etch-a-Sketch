@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  gap: 0px; /* Optional: space between grid items */
+  width: 80vmin; /* Maintain a square aspect ratio */
+  height: 80vmin; /* Maintain a square aspect ratio */
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border: 1px solid #000000; /* Optional: border around each grid item */
+}
+.grid-item:hover{
+  background-color: red; /* change cloor of grid */
+}
