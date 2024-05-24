@@ -1,3 +1,4 @@
+// Create a grid 
 document.addEventListener('DOMContentLoaded', () => {
   const gridContainer = document.getElementById('grid-container');
 
@@ -5,10 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const gridItem = document.createElement('div');
       gridItem.classList.add('grid-item');
       gridContainer.appendChild(gridItem);
+
+              // Add event listener for mouseover
+              gridItem.addEventListener('mouseover', () => {
+                gridItem.style.backgroundColor = '#FF6347'; // Change to desired color
+            });
+    
+            gridContainer.appendChild(gridItem);
   }
+
 });
 
-//document.addEventListener('DOMContentLoaded', () => {
-  //let gridItem = document.getElementsByClassName('grid-item');
-  
-//}
+createGrid(16);
+
+newGridButton.addEventListener()

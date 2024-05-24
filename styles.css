@@ -18,8 +18,10 @@ body {
 
 .grid-item {
   background-color: #ffffff;
+  transition: background-color 0.3s;
   border: 1px solid #000000; /* Optional: border around each grid item */
 }
-.grid-item:hover{
-  background-color: red; /* change cloor of grid */
+
+#controls {
+  margin-bottom: 20px;
 }
