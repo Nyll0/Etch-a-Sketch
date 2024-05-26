@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>16x16 Grid</title>
+    <title>Grid Sketchpad</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js".js"></script>
 </head>
 <body>
-    <div>
-        <input type="range" id="grid-slider" min="1" max="6" value="4">
-        <span id="grid-size-display">16x16</span>
+    <div class="toolbar">
+        <div class="tool">
+            <label for="gridSize">Grid Size:</label>
+            <input type="range" id="gridSize" name="gridSize" min="1" max="100" value="16">
+            <span id="gridSizeValue">16</span>
+        </div>
+        <div class="tool">
+            <label for="colorPicker">Color:</label>
+            <input type="color" id="colorPicker" name="colorPicker" value="#000000">
+        </div>
+        <div class="tool">
+            <button id="eraserButton">Eraser</button>
+        </div>
     </div>
-    <div id="grid-container"></div>
+    <div class="container" id="container"></div>
     <script src="script.js"></script>
 </body>
 </html>
